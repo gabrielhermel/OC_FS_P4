@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+title: "Gen-Z Web – Veille technologique"
+markdown: kramdown
+description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes pour Angular et Java."
