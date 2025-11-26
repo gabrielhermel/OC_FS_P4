@@ -42,7 +42,7 @@ description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes 
 
 # 1. Introduction
 
-Ce tableau de veille a pour objectif d’identifier les technologies les plus adaptées à l’adoption d’Angular et de Java au sein de Gen-Z Web. Il présente une synthèse claire et accessible des technologies étudiées et fournit une base technique fiable pour les futurs choix d’architecture.
+Cette synthèse de veille a pour objectif d’identifier les technologies les plus adaptées à l’adoption d’Angular et de Java au sein de Gen-Z Web. Il présente une synthèse claire et accessible des technologies étudiées et fournit une base technique fiable pour les futurs choix d’architecture.
 
 La veille se concentre sur les éléments suivants :
 * les frameworks de test pour Angular et Java
