@@ -2,6 +2,43 @@
 
 ---
 
+## Table des matières
+
+1. [Introduction](#1-introduction)
+2. [Frameworks de test](#2-frameworks-de-test)  
+  2.1. [Angular](#21-angular)  
+    2.1.1. [Frameworks de test applicatif](#211-frameworks-de-test-applicatif)  
+      2.1.1.1. [Vitest](#2111-vitest)  
+      2.1.1.2. [Jasmine](#2112-jasmine)  
+      2.1.1.3. [Jest](#2113-jest)  
+    2.1.2. [Frameworks de test end-to-end](#212-frameworks-de-test-end-to-end)  
+      2.1.2.1. [Playwright](#2121-playwright)  
+      2.1.2.2. [Cypress](#2122-cypress)
+  2.2. [Java](#22-java)  
+    2.2.1. [Frameworks de test applicatif](#221-frameworks-de-test-applicatif)  
+      2.2.1.1. [JUnit 6](#2211-junit-6)  
+    2.2.2. [Frameworks de test end-to-end](#222-frameworks-de-test-end-to-end)  
+      2.2.2.1. [Selenium](#2221-selenium)  
+      2.2.2.2. [Playwright pour Java](#2222-playwright-pour-java)  
+    2.2.3. [Frameworks de test BDD](#223-frameworks-de-test-bdd)  
+      2.2.3.1. [Cucumber](#2231-cucumber)  
+      2.2.3.2. [Gauge](#2232-gauge)
+3. [Bibliothèques de composants UI](#3-bibliothèques-de-composants-ui)  
+  3.1. [Angular](#31-angular)  
+    3.1.1. [Angular Material](#311-angular-material)  
+    3.1.2. [NG-ZORRO](#312-ng-zorro)  
+    3.1.3. [PrimeNG](#313-primeng)
+4. [Paradigmes de programmation](#4-paradigmes-de-programmation)  
+  4.0. [Aperçu des paradigmes](#40-aperçu-des-paradigmes)  
+  4.1. [Angular](#41-angular)  
+    4.1.1. [Paradigmes principaux](#411-paradigmes-principaux)  
+    4.1.2. [Implications architecturales](#412-implications-architecturales)  
+  4.2. [Java](#42-java)  
+    4.2.1. [Paradigmes principaux](#421-paradigmes-principaux)  
+    4.2.2. [Implications architecturales](#422-implications-architecturales)
+
+---
+
 ## 1. Introduction
 
 Ce tableau de veille a pour objectif d’identifier les technologies les plus adaptées à l’adoption d’Angular et de Java au sein de Gen-Z Web. Il présente une synthèse claire et accessible des technologies étudiées et fournit une base technique fiable pour les futurs choix d’architecture.
@@ -261,3 +298,99 @@ PrimeNG est une bibliothèque riche en composants, souvent choisie pour sa couve
 - [**Diggibyte** Why PrimeNG Remains My Go-To UI Library for Angular 19 in 2025](https://diggibyte.com/why-primeng-remains-my-go-to-ui-library-for-angular-19-in-2025/)
 
 ---
+
+## 4. Paradigmes de programmation
+
+Les langages et frameworks modernes combinent plusieurs manières d’organiser la logique d’un logiciel. Comprendre ces paradigmes permet de mieux structurer les applications, d’adapter l’architecture aux besoins métier et de choisir les approches les plus adaptées à Angular ou à Java.
+
+### 4.0. Aperçu des paradigmes
+
+**Impérative**
+Style dans lequel le programme décrit explicitement, étape par étape, les opérations à effectuer et les changements d’état nécessaires pour atteindre un résultat.
+
+**Orientée-objet**
+Approche impérative structurée autour d’objets regroupant données et comportements. Elle favorise l’encapsulation (modifier l’implémentation interne sans impacter le reste du code) et facilite la réutilisation via l’héritage et le polymorphisme.
+
+**Déclarative**
+Approche où l’on décrit le résultat attendu plutôt que les étapes pour y parvenir. Le système sous-jacent détermine la manière d’obtenir ce résultat.
+
+**Fonctionnelle**
+Forme de programmation déclarative privilégiant les fonctions pures et l'immuabilité, afin de réduire les effets de bord et d’améliorer la prévisibilité du code. Elle permet des transformations de données plus simples, testables et sûres.
+
+**Réactive**
+Approche centrée sur des flux d’événements asynchrones où les mises à jour se propagent automatiquement. Elle est bien adaptée aux interfaces dynamiques et aux architectures non bloquantes.
+
+### 4.1. Angular
+
+<img src="assets/icons/angular.svg" alt="Angular logo" width="60">
+
+#### 4.1.1. Paradigmes principaux
+
+Angular adopte une approche **déclarative**, où les templates décrivent l’état attendu de l’interface, et une architecture orientée composants qui structure l’application en blocs cohérents et réutilisables. La programmation **réactive** est centrale, historiquement via RxJS (Observables, flux asynchrones) et aujourd’hui renforcée par Signals, qui assurent une propagation automatique et fine des changements d’état. Des éléments **fonctionnels** s’intègrent également : immutabilité encouragée dans le change detection, pipes purs, fonctions de transformation.
+
+#### 4.1.2. Implications architecturales
+
+- Interfaces hautement dynamiques (dashboards, applications collaboratives, e-commerce) :
+  - Signals pour l’état local et la **réactivité** fine
+  - RxJS pour les flux complexes (API multiples, WebSockets)
+  - Services **réactifs** pour la coordination entre composants
+- Applications transactionnelles (panier d'achat, réservations) :
+  - État **réactif** pour les données utilisateur
+  - Logique métier **fonctionnelle** pour les calculs purs et transformations immuables
+- Formulaires avancés (portails administratifs, configuration produits, onboarding) :
+  - Reactive Forms pour une approche **déclarative** et composable
+  - Adaptée aux processus multi-étapes
+- Applications modulaires et scalables (plateformes multi-tenant, portails avec nombreux modules métiers) :
+  - Composants standalone
+  - Lazy loading
+  - Organisation par features pour maintenir lisibilité et évolutivité
+- Applications Web progressives / Offline-first :
+  - Synchronisation **réactive**
+  - Stratégies de cache **déclaratives**
+  - Séparation claire entre logique pure et effets
+
+**Recommandations générales**
+  - Utiliser les Signals comme primitive de **réactivité** par défaut
+  - Réserver RxJS aux flux asynchrones complexes
+  - Maintenir l’immutabilité dans les données
+  - Privilégier la composition **fonctionnelle** pour une logique testable
+
+### **4.2. Java**
+
+<img src="assets/icons/java.svg" alt="Java logo" width="60">
+
+#### 4.2.1. Paradigmes principaux
+
+Java repose sur une base **orientée objet** et **impérative** : classes, encapsulation, héritage et polymorphisme structurent la modélisation métier. Depuis Java 8, le langage intègre des outils **fonctionnels** (lambdas, Streams API, Optional) permettant des transformations **déclaratives** et composables. La programmation **réactive** est accessible via des bibliothèques (Project Reactor, RxJava, Mutiny) pour des architectures non-bloquantes. De nombreux frameworks (Spring notamment) encouragent un style **déclaratif** via annotations et configuration, réduisant le code répétitif.
+
+#### 4.2.2. Implications architecturales
+
+- Architectures **réactives** et haute concurrence (APIs à fort trafic, microservices non-bloquants) :
+  - Spring WebFlux + Reactor pour I/O non-bloquant
+  - Backpressure natif pour la résilience
+  - Immutabilité pour la prévisibilité
+- Applications métier transactionnelles (e-commerce, réservations, systèmes financiers) :
+  - Modélisation **orientée objet** du domaine (entités, agrégats)
+  - Logique **fonctionnelle** pour calculs et règles métier composables
+  - **Réactivité** pour notifications et mises à jour temps réel
+- Systèmes orientés événements (architectures distribuées, messaging) :
+  - Streams réactifs pour traitement d'événements (Kafka, RabbitMQ)
+  - Handlers **fonctionnels** purs
+  - Event sourcing avec logs immuables
+- Applications traditionnelles CRUD (portails administratifs, backoffices) :
+  - Spring MVC + Hibernate pour modèle **orienté objet** classique
+  - Annotations **déclaratives** pour réduire le boilerplate
+- Traitement de données et pipelines (batch, ETL, analytics) :
+  - Streams API pour transformations **fonctionnelles** parallélisables
+  - Collectors pour agrégations **déclaratives**
+  - Vavr pour structures immuables persistantes
+- Modernisation de systèmes legacy :
+  - Introduction progressive de patterns **fonctionnels**
+  - Facades **réactives** sur APIs synchrones
+  - Découplage par événements
+
+**Recommandations générales**
+  - S'appuyer sur un socle **orienté objet** pour la modélisation du domaine
+  - Enrichir avec des patterns **fonctionnels** pour la logique testable (immutabilité, composition)
+  - N'introduire la **réactivité** complète que si justifié architecturalement (I/O intensif, haute concurrence)
+  - Maintenir une cohérence de style par projet plutôt que mélanger les paradigmes sans raison claire
