@@ -1,13 +1,3 @@
 title: "Gen Z Web : Veille technologique"
-description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes pour Angular et Java."
-remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
-baseurl: "/OC_FS_P4"
-url: "https://gabrielhermel.github.io"
-just_the_docs:
-  navigation_depth: 4
-  show_toc: false
-  collections:
-    main:
-      output: true
+theme: jekyll-theme-cayman
+markdown: kramdown
