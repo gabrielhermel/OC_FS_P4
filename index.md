@@ -1,3 +1,12 @@
+---
+title: "Gen Z Web : Veille technologique"
+description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes pour Angular et Java"
+---
+
+{:toc}
+
+---
+
 # 1. Introduction
 
 Ce tableau de veille a pour objectif d’identifier les technologies les plus adaptées à l’adoption d’Angular et de Java au sein de Gen-Z Web. Il présente une synthèse claire et accessible des technologies étudiées et fournit une base technique fiable pour les futurs choix d’architecture.
