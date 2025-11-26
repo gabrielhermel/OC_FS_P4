@@ -3,7 +3,40 @@ title: "Gen Z Web : Veille technologique"
 description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes pour Angular et Java"
 ---
 
-{:toc}
+## Table des matières
+
+1. [Introduction](#1-introduction)  
+2. [Frameworks de test](#2-frameworks-de-test)  
+  2.1. [Angular](#21-angular)  
+    2.1.1. [Frameworks de test applicatif](#211-frameworks-de-test-applicatif)  
+      2.1.1.1. [Vitest](#2111-vitest)  
+      2.1.1.2. [Jasmine](#2112-jasmine)  
+      2.1.1.3. [Jest](#2113-jest)  
+    2.1.2. [Frameworks de test end-to-end](#212-frameworks-de-test-end-to-end)  
+      2.1.2.1. [Playwright](#2121-playwright)  
+      2.1.2.2. [Cypress](#2122-cypress)  
+  2.2. [Java](#22-java)  
+    2.2.1. [Frameworks de test applicatif](#221-frameworks-de-test-applicatif)  
+      2.2.1.1. [JUnit 6](#2211-junit-6)  
+    2.2.2. [Frameworks de test end-to-end](#222-frameworks-de-test-end-to-end)  
+      2.2.2.1. [Selenium](#2221-selenium)  
+      2.2.2.2. [Playwright pour Java](#2222-playwright-pour-java)  
+    2.2.3. [Frameworks de test BDD](#223-frameworks-de-test-bdd)  
+      2.2.3.1. [Cucumber](#2231-cucumber)  
+      2.2.3.2. [Gauge](#2232-gauge)  
+3. [Bibliothèques de composants UI](#3-bibliothèques-de-composants-ui)  
+  3.1. [Angular](#31-angular)  
+    3.1.1. [Angular Material](#311-angular-material)  
+    3.1.2. [NG-ZORRO](#312-ng-zorro)  
+    3.1.3. [PrimeNG](#313-primeng)  
+4. [Paradigmes de programmation](#4-paradigmes-de-programmation)  
+  4.0. [Aperçu des paradigmes](#40-aperçu-des-paradigmes)  
+  4.1. [Angular](#41-angular)  
+    4.1.1. [Paradigmes principaux](#411-paradigmes-principaux)  
+    4.1.2. [Implications architecturales](#412-implications-architecturales)  
+  4.2. [Java](#42-java)  
+    4.2.1. [Paradigmes principaux](#421-paradigmes-principaux)  
+    4.2.2. [Implications architecturales](#422-implications-architecturales)  
 
 ---
 
@@ -26,7 +59,7 @@ La veille se concentre sur les éléments suivants :
 
 ### 2.1.1. Frameworks de test applicatif
 
-#### **2.1.1.1. Vitest**
+#### 2.1.1.1. Vitest
 
 <img src="assets/icons/vitest.svg" alt="Vitest logo" width="60">
 
@@ -45,7 +78,7 @@ Vitest est désormais le framework et test runner officiel introduit avec Angula
 - [**ng-news** Vitest — Angular’s New Testing Framework](https://medium.com/ng-news/ng-news-25-43-vitest-angulars-new-testing-framework-c4af76fef09f)
 - [**Ninja Squad** What’s new in Angular 21](https://blog.ninja-squad.com/2025/11/20/what-is-new-angular-21.0)
 
-#### **2.1.1.2. Jasmine**
+#### 2.1.1.2. Jasmine
 
 <img src="assets/icons/jasmine.svg" alt="Jasmine logo" width="60">
 
@@ -59,7 +92,7 @@ Jasmine a longtemps été le standard pour les tests Angular, exécutés princip
 - [**Documentation officielle**](https://jasmine.github.io)
 - [**npm** Karma is deprecated](https://www.npmjs.com/package/karma)
 
-#### **2.1.1.3. Jest**
+#### 2.1.1.3. Jest
 
 <img src="assets/icons/jest.svg" alt="Jest logo" width="60">
 
@@ -78,7 +111,7 @@ Jest est largement utilisé dans l’écosystème JavaScript grâce à sa rapidi
 
 ### 2.1.2. Frameworks de test end-to-end
 
-#### **2.1.2.1. Playwright**
+#### 2.1.2.1. Playwright
 
 <img src="assets/icons/playwright.svg" alt="Playwright logo" width="60">
 
@@ -95,7 +128,7 @@ Playwright est un outil de test end-to-end moderne capable d’exécuter des tes
 - [**Angular.love** Modern E2E Testing for Angular Apps with Playwright](https://angular.love/modern-e2e-testing-for-angular-apps-with-playwright)
 - [**Test Automation** Advantages and Disadvantages of Playwright](https://test-automation.blog/playwright/advantages-and-disadvantages-of-playwright/)
 
-#### **2.1.2.2. Cypress**
+#### 2.1.2.2. Cypress
 
 <img src="assets/icons/cypress.svg" alt="Cypress logo" width="60">
 
@@ -117,7 +150,7 @@ Cypress est apprécié pour son interface interactive et sa facilité de prise e
 
 ### 2.2.1. Frameworks de test applicatif
 
-#### **2.2.1.1. JUnit 6**
+#### 2.2.1.1. JUnit 6
 
 <img src="assets/icons/junit6.webp" alt="JUnit 6 logo" width="60">
 
@@ -137,7 +170,7 @@ JUnit 6 constitue aujourd’hui le standard moderne pour les tests applicatifs e
 
 ### 2.2.2. Frameworks de test end-to-end
 
-#### **2.2.2.1. Selenium**
+#### 2.2.2.1. Selenium
 
 <img src="assets/icons/selenium.svg" alt="Selenium logo" width="60">
 
@@ -154,7 +187,7 @@ Selenium est la solution historique pour les tests d’interface web en Java. Sa
 - [**BrowserStack** Why should Selenium be selected as a tool?](https://www.browserstack.com/guide/why-should-selenium-be-selected-as-a-tool)
 - [**TestDevLab** Automated Testing With Java and Selenium: Advantages, Specifics, and Challenges](https://www.testdevlab.com/blog/test-automation-with-java-and-selenium)
 
-#### **2.2.2.2. Playwright pour Java**
+#### 2.2.2.2. Playwright pour Java
 
 <img src="assets/icons/playwright.svg" alt="Playwright logo" width="60">
 
@@ -172,7 +205,7 @@ Playwright est une alternative moderne pour les tests end-to-end, offrant une ex
 
 ### 2.2.3. Frameworks de test BDD
 
-#### **2.2.3.1. Cucumber**
+#### 2.2.3.1. Cucumber
 
 <img src="assets/icons/cucumber.svg" alt="Cucumber logo" width="60">
 
@@ -190,7 +223,7 @@ Cucumber est la solution BDD la plus largement adoptée dans l’écosystème Ja
 - [**PixelQA** Cucumber BDD Framework: Features, Setup & Benefits](https://www.pixelqa.com/blog/post/cucumber-bdd-testing-framework-guide)
 - [**TestGrid** Cucumber Testing Framework: The Ultimate Guide with Practical Examples](https://testgrid.io/blog/cucumber-testing/)
 
-#### **2.2.3.2. Gauge**
+#### 2.2.3.2. Gauge
 
 <img src="assets/icons/gauge.svg" alt="Guage logo" width="60">
 
