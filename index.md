@@ -1,3 +1,10 @@
+---
+title: "Dashboard de veille technologique"
+description: "Synthèse des frameworks de test, bibliothèques UI et paradigmes pour Angular et Java."
+layout: default
+theme: jekyll-theme-cayman
+---
+
 # Dashboard de veille technologique
 
 ---
