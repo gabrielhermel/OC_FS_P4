@@ -197,6 +197,7 @@ Playwright est une alternative moderne pour les tests end-to-end, offrant une ex
 - Exécution rapide et stable grâce à l’attente automatique
 - Outils intégrés pour l’analyse et le débogage
 - Solution moderne pour les applications web complexes
+- Écosystème Java moins mature (intégration d'outils moins fluide et absence de génération de rapports HTML native)
 
 **Sources**
 - [**Documentation officielle**](https://playwright.dev/java/)
